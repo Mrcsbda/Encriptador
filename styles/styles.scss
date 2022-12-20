@@ -5,6 +5,7 @@ $poppins: "Poppins", sans-serif;
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *,
 *:before,
@@ -15,8 +16,9 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   background-color: $background;
@@ -88,6 +90,7 @@ body {
 
     .message-encrypted-container {
       padding: 30px;
+      margin-bottom: 3rem;
 
       .message-encrypted {
         width: 100%;
@@ -163,3 +166,77 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  body {
+    main {
+      .stains {
+        display: inline;
+        position: absolute;
+        height: 40%;
+      }
+      .message-container {
+        padding: 200px 70px 10px 70px;
+
+        .message {
+          font-size: 2.3rem;
+        }
+        .recommendation-container {
+          img {
+            width: 1.3rem;
+            margin-right: 6px;
+          }
+          p {
+            font-size: 1.3rem;
+          }
+        }
+        .buttons-container {
+          flex-direction: row;
+          justify-content: center;
+          gap: 15px;
+
+          button {
+            width: 100%;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .message-encrypted-container {
+        padding: 30px 70px;
+        .message-encrypted {
+          .no-encrypted {
+            h2 {
+              font-size: 1.7rem;
+              margin-bottom: 10px;
+            }
+
+            p {
+              font-size: 1.4rem;
+            }
+          }
+
+          .encrypted {
+            div {
+              font-size: 1.5rem;
+            }
+
+            button {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      padding: 20px 30px;
+      background-size: cover;
+      background-image: url("../assets/footer.jpg");
+
+      img {
+        width: 1.3rem;
+      }
+    }
+  }
+}
