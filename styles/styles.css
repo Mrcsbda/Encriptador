@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 214, 255);
+  justify-content: space-between;
+}
+body main {
+  width: 100%;
+  height: 100%;
+}
+body main .message-container {
+  padding: 100px 30px 10px 30px;
+}
+body main .message-container .message {
+  width: 100%;
+  color: rgb(50, 0, 70);
+  border: none;
+  resize: none;
+  height: 20rem;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(236, 214, 255);
+}
+body main .message-container .message::-moz-placeholder {
+  color: rgb(50, 0, 70);
+}
+body main .message-container .message:-ms-input-placeholder {
+  color: rgb(50, 0, 70);
+}
+body main .message-container .message::placeholder {
+  color: rgb(50, 0, 70);
+}
+body main .message-container .recommendation-container {
+  color: rgb(50, 0, 70);
+  display: flex;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body main .message-container .recommendation-container img {
+  width: 1rem;
+  margin-right: 3px;
+}
+body main .message-container .buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+body main .message-container .buttons-container button {
+  margin-bottom: 10px;
+  padding: 20px 0px;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+  border: none;
+}
+body main .message-container .buttons-container .button-1 {
+  color: white;
+  background-color: rgb(86, 32, 160);
+}
+body main .message-container .buttons-container .button-2 {
+  color: rgb(86, 32, 160);
+  border: 1px solid rgb(86, 32, 160);
+}
+body main .message-encrypted-container {
+  padding: 30px;
+}
+body main .message-encrypted-container .message-encrypted {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px;
+}
+body main .message-encrypted-container .message-encrypted .no-encrypted {
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+body main .message-encrypted-container .message-encrypted .no-encrypted img {
+  display: none;
+}
+body main .message-encrypted-container .message-encrypted .no-encrypted h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+body main .message-encrypted-container .message-encrypted .no-encrypted p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+body main .message-encrypted-container .message-encrypted .no-encrypted-active {
+  display: inline;
+}
+body footer {
+  width: 100%;
+  background-image: url("../assets/footer.jpg");
+  background-size: cover;
+}/*# sourceMappingURL=styles.css.map */
