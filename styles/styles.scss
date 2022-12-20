@@ -26,9 +26,12 @@ body {
     width: 100%;
     height: 100%;
 
+    .stains {
+      display: none;
+    }
     .message-container {
       padding: 100px 30px 10px 30px;
-    
+
       .message {
         width: 100%;
         color: $text;
@@ -62,49 +65,86 @@ body {
         flex-direction: column;
 
         button {
-          margin-bottom: 10px;
+          border: none;
           padding: 20px 0px;
           font-size: 1.3rem;
-          font-family: $poppins;
+          margin-bottom: 10px;
           border-radius: 15px;
-          border: none;
+          font-family: $poppins;
         }
 
         .button-1 {
           color: white;
           background-color: $violet;
         }
+
         .button-2 {
           color: $violet;
           border: 1px solid $violet;
+          background-color: white;
         }
       }
     }
 
     .message-encrypted-container {
       padding: 30px;
+
       .message-encrypted {
-        background-color: white;
         width: 100%;
+        padding: 40px;
         border-radius: 20px;
-        padding: 30px;
+        background-color: white;
+        box-shadow: 9px 9px 12px #999999;
+
         .no-encrypted {
-          font-family: $poppins;
           display: none;
+          font-family: $poppins;
+
           img {
             display: none;
           }
+
           h2 {
-            text-align: center;
             font-size: 1.5rem;
             margin-bottom: 5px;
-          }
-          p {
             text-align: center;
+          }
+
+          p {
             font-size: 1.2rem;
+            text-align: center;
           }
         }
+
         .no-encrypted-active {
+          display: inline;
+        }
+
+        .encrypted {
+          display: none;
+          font-family: $poppins;
+
+          div {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+          }
+
+          img {
+            display: none;
+          }
+
+          button {
+            width: 100%;
+            padding: 20px;
+            color: $violet;
+            font-size: 1.3rem;
+            border-radius: 20px;
+            border: 1px solid $violet;
+            background-color: white;
+          }
+        }
+
+        .encrypted-active {
           display: inline;
         }
       }
@@ -113,7 +153,13 @@ body {
 
   footer {
     width: 100%;
-    background-image: url("../assets/footer.jpg");
+    padding: 20px 30px;
     background-size: cover;
+    background-image: url("../assets/footer.jpg");
+
+    img {
+      width: 1.3rem;
+    }
   }
 }
+
