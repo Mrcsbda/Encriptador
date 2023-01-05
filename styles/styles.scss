@@ -170,9 +170,9 @@ body {
   body {
     main {
       .stains {
+        height: 40%;
         display: inline;
         position: absolute;
-        height: 40%;
       }
       .message-container {
         padding: 12.5rem 4.4rem 0.625rem 4.4rem;
@@ -248,18 +248,18 @@ body {
       align-items: center;
 
       .stains {
-        display: inline;
-        height: 25rem;
-        position: absolute;
         top: 0;
+        height: 25rem;
+        display: inline;
+        position: absolute;
       }
       .message-container {
-        padding: 12rem 2rem 2rem 10rem;
         width: 60%;
+        padding: 12rem 2rem 2rem 10rem;
 
         .message {
-          margin-bottom: 60px;
           font-size: 1.7rem;
+          margin-bottom: 60px;
         }
         .recommendation-container {
           margin-bottom: 20px;
@@ -298,34 +298,34 @@ body {
         margin-bottom: 3rem;
 
         .message-encrypted {
-          position: absolute;
           top: 2rem;
           width: 26rem;
           height: 42rem;
+          overflow: auto;
+          position: absolute;
           border-radius: 30px;
-          overflow: hidden;
 
           .no-encrypted {
             img {
-              display: inline;
-              position: absolute;
-              width: 90%;
               top: 0;
               right: 0;
+              width: 90%;
+              display: inline;
+              position: absolute;
             }
 
             h2 {
-              position: absolute;
               top: 60%;
               left: 40px;
               right: 40px;
+              position: absolute;
             }
 
             p {
-              position: absolute;
               top: 73%;
               left: 40px;
               right: 40px;
+              position: absolute;
             }
           }
 
@@ -336,8 +336,8 @@ body {
             }
 
             img {
-              display: inline;
               width: 90%;
+              display: inline;
               margin-bottom: 20px;
             }
 

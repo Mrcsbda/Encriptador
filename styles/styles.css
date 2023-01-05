@@ -149,9 +149,9 @@ body footer img {
 
 @media (min-width: 768px) {
   body main .stains {
+    height: 40%;
     display: inline;
     position: absolute;
-    height: 40%;
   }
   body main .message-container {
     padding: 12.5rem 4.4rem 0.625rem 4.4rem;
@@ -207,18 +207,18 @@ body footer img {
     align-items: center;
   }
   body main .stains {
-    display: inline;
-    height: 25rem;
-    position: absolute;
     top: 0;
+    height: 25rem;
+    display: inline;
+    position: absolute;
   }
   body main .message-container {
-    padding: 12rem 2rem 2rem 10rem;
     width: 60%;
+    padding: 12rem 2rem 2rem 10rem;
   }
   body main .message-container .message {
-    margin-bottom: 60px;
     font-size: 1.7rem;
+    margin-bottom: 60px;
   }
   body main .message-container .recommendation-container {
     margin-bottom: 20px;
@@ -246,39 +246,39 @@ body footer img {
     margin-bottom: 3rem;
   }
   body main .message-encrypted-container .message-encrypted {
-    position: absolute;
     top: 2rem;
     width: 26rem;
     height: 42rem;
+    overflow: auto;
+    position: absolute;
     border-radius: 30px;
-    overflow: hidden;
   }
   body main .message-encrypted-container .message-encrypted .no-encrypted img {
-    display: inline;
-    position: absolute;
-    width: 90%;
     top: 0;
     right: 0;
+    width: 90%;
+    display: inline;
+    position: absolute;
   }
   body main .message-encrypted-container .message-encrypted .no-encrypted h2 {
-    position: absolute;
     top: 60%;
     left: 40px;
     right: 40px;
+    position: absolute;
   }
   body main .message-encrypted-container .message-encrypted .no-encrypted p {
-    position: absolute;
     top: 73%;
     left: 40px;
     right: 40px;
+    position: absolute;
   }
   body main .message-encrypted-container .message-encrypted .encrypted div {
     font-size: 1.3rem;
     margin-bottom: 20px;
   }
   body main .message-encrypted-container .message-encrypted .encrypted img {
-    display: inline;
     width: 90%;
+    display: inline;
     margin-bottom: 20px;
   }
   body main .message-encrypted-container .message-encrypted .encrypted button {
