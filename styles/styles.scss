@@ -32,7 +32,7 @@ body {
       display: none;
     }
     .message-container {
-      padding: 100px 30px 10px 30px;
+      padding: 6.25rem 1.875rem 0.625rem 1.9rem;
 
       .message {
         width: 100%;
@@ -89,7 +89,7 @@ body {
     }
 
     .message-encrypted-container {
-      padding: 30px;
+      padding: 2rem;
       margin-bottom: 3rem;
 
       .message-encrypted {
@@ -175,7 +175,7 @@ body {
         height: 40%;
       }
       .message-container {
-        padding: 200px 70px 10px 70px;
+        padding: 12.5rem 4.4rem 0.625rem 4.4rem;
 
         .message {
           font-size: 2.3rem;
@@ -202,7 +202,7 @@ body {
       }
 
       .message-encrypted-container {
-        padding: 30px 70px;
+        padding: 2rem 4.4rem;
         .message-encrypted {
           .no-encrypted {
             h2 {
@@ -236,6 +236,120 @@ body {
 
       img {
         width: 1.3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    main {
+      display: flex;
+      align-items: center;
+
+      .stains {
+        display: inline;
+        height: 25rem;
+        position: absolute;
+        top: 0;
+      }
+      .message-container {
+        padding: 12rem 2rem 2rem 10rem;
+        width: 60%;
+
+        .message {
+          margin-bottom: 60px;
+          font-size: 1.7rem;
+        }
+        .recommendation-container {
+          margin-bottom: 20px;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        .buttons-container {
+          flex-direction: row;
+
+          button {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            border-radius: 20px;
+          }
+
+          .button-1 {
+            &:hover {
+              cursor: pointer;
+              background-color: rgb(106, 38, 202);
+            }
+          }
+
+          .button-2 {
+            &:hover {
+              cursor: pointer;
+              background-color: rgb(249, 244, 255);
+            }
+          }
+        }
+      }
+
+      .message-encrypted-container {
+        margin-bottom: 3rem;
+
+        .message-encrypted {
+          position: absolute;
+          top: 2rem;
+          width: 26rem;
+          height: 42rem;
+          border-radius: 30px;
+          overflow: hidden;
+
+          .no-encrypted {
+            img {
+              display: inline;
+              position: absolute;
+              width: 90%;
+              top: 0;
+              right: 0;
+            }
+
+            h2 {
+              position: absolute;
+              top: 60%;
+              left: 40px;
+              right: 40px;
+            }
+
+            p {
+              position: absolute;
+              top: 73%;
+              left: 40px;
+              right: 40px;
+            }
+          }
+
+          .encrypted {
+            div {
+              font-size: 1.3rem;
+              margin-bottom: 20px;
+            }
+
+            img {
+              display: inline;
+              width: 90%;
+              margin-bottom: 20px;
+            }
+
+            button {
+              font-size: 1.5rem;
+              &:hover {
+                cursor: pointer;
+                background-color: rgb(249, 244, 255);
+              }
+            }
+          }
+        }
       }
     }
   }
