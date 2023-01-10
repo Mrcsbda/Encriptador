@@ -201,20 +201,24 @@ body footer img {
     width: 1.3rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   body main {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: calc(100vh - 89px);
+    margin-bottom: 1rem;
   }
   body main .stains {
     top: 0;
+    left: 0;
     height: 25rem;
     display: inline;
     position: absolute;
   }
   body main .message-container {
-    width: 60%;
-    padding: 12rem 2rem 2rem 10rem;
+    width: 50%;
+    padding: 5rem 2rem 2rem 10rem;
   }
   body main .message-container .message {
     font-size: 1.7rem;
@@ -230,7 +234,7 @@ body footer img {
     flex-direction: row;
   }
   body main .message-container .buttons-container button {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 30px;
     border-radius: 20px;
   }
@@ -243,14 +247,13 @@ body footer img {
     background-color: rgb(249, 244, 255);
   }
   body main .message-encrypted-container {
-    margin-bottom: 3rem;
+    margin-top: 2rem;
   }
   body main .message-encrypted-container .message-encrypted {
-    top: 2rem;
     width: 26rem;
-    height: 42rem;
+    height: 80vh;
     overflow: auto;
-    position: absolute;
+    position: relative;
     border-radius: 30px;
   }
   body main .message-encrypted-container .message-encrypted .no-encrypted img {

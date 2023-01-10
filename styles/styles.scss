@@ -241,21 +241,25 @@ body {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   body {
     main {
       display: flex;
       align-items: center;
+      justify-content: center;
+      height: calc(100vh - 89px);
+      margin-bottom: 1rem;
 
       .stains {
         top: 0;
+        left: 0;
         height: 25rem;
         display: inline;
         position: absolute;
       }
       .message-container {
-        width: 60%;
-        padding: 12rem 2rem 2rem 10rem;
+        width: 50%;
+        padding: 5rem 2rem 2rem 10rem;
 
         .message {
           font-size: 1.7rem;
@@ -273,7 +277,7 @@ body {
           flex-direction: row;
 
           button {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 30px;
             border-radius: 20px;
           }
@@ -295,14 +299,12 @@ body {
       }
 
       .message-encrypted-container {
-        margin-bottom: 3rem;
-
+        margin-top: 2rem;
         .message-encrypted {
-          top: 2rem;
           width: 26rem;
-          height: 42rem;
+          height: 80vh;
           overflow: auto;
-          position: absolute;
+          position: relative;
           border-radius: 30px;
 
           .no-encrypted {
