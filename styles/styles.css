@@ -217,7 +217,7 @@ body footer img {
   }
   body main .message-container {
     width: 50%;
-    padding: 5rem 2rem 2rem 10rem;
+    padding: 5rem 2rem 2rem 6rem;
   }
   body main .message-container .message {
     font-size: 1.7rem;
@@ -275,7 +275,7 @@ body footer img {
     position: absolute;
   }
   body main .message-encrypted-container .message-encrypted .encrypted div {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
   body main .message-encrypted-container .message-encrypted .encrypted img {
