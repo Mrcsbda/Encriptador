@@ -50,3 +50,7 @@ function decrypt() {
   noEncrypted.classList.remove("no-encrypted-active");
   encrypted.classList.add("encrypted-active");
 }
+
+function copy(){
+  navigator.clipboard.writeText(this.result.innerHTML)
+}
